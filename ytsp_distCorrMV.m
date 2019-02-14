@@ -1,10 +1,10 @@
 function [dCor, dCov, dVar, stats] = ytsp_distCorrMV(X, optCent)
-% YTSP_DISTCORRALL    Calculate multivariate distance correlation between each pair of two random variable sets in X
+% YTSP_DISTCORRMV    Calculate multivariate distance correlation between each pair of two random variable sets in X
 % ==============================================================================================
 % [ INPUTS ]
 %     X = a 1D cell array of length m. Each cell contains 2D time-series matrices with n time points and p variates (voxels) (n x p)
 %           p can be different across m, but n should be the same.
-% .   optCent = Centering option
+%     optCent = Centering option
 %                   1: U-centering (default) / 0: double-centering
 % -----------------------------------------------------------------------------------------------
 % [ OUTPUTS ]
@@ -13,7 +13,7 @@ function [dCor, dCov, dVar, stats] = ytsp_distCorrMV(X, optCent)
 %     dVar = m distance variance
 %     stats = independent t and p-value of distance correlation coefficient.
 %
-% Last update: Jan 31, 2019.
+% Last update: Feb 14, 2019.
 %
 % Copyright 2019. Kwangsun Ray Yoo (K Yoo), PhD
 %     E-mail: kwangsun.yoo@yale.edu / rayksyoo@gmail.com
