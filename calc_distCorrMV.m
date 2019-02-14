@@ -1,5 +1,5 @@
-function [dCor, dCov, dVar, stats] = ytsp_distCorrMV(X, optCent)
-% YTSP_DISTCORRMV    Calculate multivariate distance correlation between each pair of two random variable sets in X
+function [dCor, dCov, dVar, stats] = calc_distCorrMV(X, optCent)
+% CALC_DISTCORRMV    Calculate multivariate distance correlation between each pair of two random variable sets in X
 % ==============================================================================================
 % [ INPUTS ]
 %     X = a 1D cell array of length m. Each cell contains 2D time-series matrices with n time points and p variates (voxels) (n x p)
