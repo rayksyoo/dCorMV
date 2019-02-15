@@ -79,5 +79,5 @@ dCor(logical(eye(size(dCor)))) = 0;
 
 % Stats
 stats.df = K/2 -1;
-stats.T = sqrt(stats.df) * (dCor ./ sqrt(1-dCor.^2));
+stats.T = sqrt(stats.df) * (dCor.^2 ./ sqrt(1-dCor.^4));
 stats.p = tcdf(stats.T, stats.df, 'upper');
